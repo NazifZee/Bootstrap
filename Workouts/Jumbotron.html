@@ -7,24 +7,32 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Monty's Cafe</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Workouts/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600" rel="stylesheet">
+
 
     <!-- Custom styles for this template -->
     <style type="text/css">
         body {
+        	font-family: 'Nunito Sans', sans-serif;
+        	font-size: medium;
             padding-top: 5rem;
+            padding-right: 0rem;
+            padding-left: 0rem;
         }
 
         .starter-template {
-            background-color: #A15A4D;
+
+            background-color: #f4fdd9;
             padding: 3rem 1.5rem;
             text-align: center;
         }
         .jumbotron{
-            background-color: #b36456
+            background-color: #c8d0b2
         }
         @media screen and (max-width:600px){
             .jumbotron{
@@ -32,18 +40,25 @@
                 display: none;
             }
         }
+        .navbar-brand{
+            font-family: 'Great Vibes';
+            font-weight: 900;
+            font-size: xx-large;
+        }
         .navbar{
-            background-color: #7D463C;
+            background-color: #6a8d73;
         }
         .container{
-            background-color: #B36456;
-            width: auto;
+            padding-right: 0rem;
+            padding-left: 0rem;
+            background-color: #f4fdd9;
+           
         }
         .col-sm-3{
-            background-color: #c46d5e;
+            background-color: #e4ffe1;
         }
         .col-sm-9{
-            background-color: #c97a6e;
+            background-color: #d0e8cd;
         }
     </style>
     
@@ -63,7 +78,7 @@
 <body>
 
     <nav class="navbar navbar-expand-md navbar-dark  fixed-top">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#" >Monty's Cafe</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -99,7 +114,7 @@
         <section class="slide1" width="device-width">
 
         <div class="starter-template">
-            <h1>Bootstrap starter template</h1>
+            <h1 style="font-family: 'Great Vibes'; font-size: xx-large;">Bootstrap starter template</h1>
             <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
             <br>
             <br>
@@ -113,7 +128,7 @@
         </div>
             </section>
       <div class="jumbotron" >
-        <h1>Sample Document</h1>
+        <h1  style="font-family: 'Nunito Sans', sans-serif; font-size: x-large;font-weight: 900;">We're the best in town</h1>
           <p>
          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
@@ -150,8 +165,8 @@
                 <br>
                 <label for="password">Password:
                 <input type="password" class="form-control" id="password"></label>
+                    
                 <br>
-                
                 <label><input type="checkbox">Remember me  </label>
                 <br>
                 
