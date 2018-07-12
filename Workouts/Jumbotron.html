@@ -20,9 +20,24 @@
         body {
         	font-family: 'Nunito Sans', sans-serif;
         	font-size: medium;
-            padding-top: 5rem;
-            padding-right: 0rem;
-            padding-left: 0rem;
+            padding-top: 70px;
+       display: unset;
+        }
+        .parallax {
+        	background-image: url("../Workouts/node_modules/Images/cappucino.jpg");
+        	height: 650px;
+        	background-attachment: fixed;
+        	background-position: center;
+        	background-size: cover;
+        	z-index: -1;
+        	opacity: 0.9;
+        }
+        .Boot {
+        	z-index: 3;
+        	position: inherit;
+        	text-align: center;
+        	padding-top: 200px;
+
         }
 
         .starter-template {
@@ -32,7 +47,7 @@
             text-align: center;
         }
         .jumbotron{
-            background-color: #c8d0b2
+            background-color: #f5ebcc
         }
         @media screen and (max-width:600px){
             .jumbotron{
@@ -46,8 +61,13 @@
             font-size: xx-large;
         }
         .navbar{
-            background-color: #6a8d73;
+            background-color: #251102;
         }
+        .btn-hover--transparent-shadow:hover {
+		  color: #f1ece7;
+		  background-color: transparent;
+		  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24);
+		}
         .container{
             padding-right: 0rem;
             padding-left: 0rem;
@@ -55,10 +75,10 @@
            
         }
         .col-sm-3{
-            background-color: #e4ffe1;
+            background-color: #f6fed3;
         }
         .col-sm-9{
-            background-color: #d0e8cd;
+            background-color: #f6eed3;
         }
     </style>
     
@@ -89,13 +109,13 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
+                    <a class="nav-link disabled" href="#">Contact Us</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">What's new?</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
@@ -105,21 +125,30 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <button class="btn btn-hover--transparent-shadow btn--transition" type="submit">Search</button>
             </form>
         </div>
     </nav>
+    <div class="parallax">
+    	<div class="Boot">
+    		
+    	<h1 style="font-family: 'Great Vibes'; font-size: xx-large;color:black; font-weight: bold;">Bootstrap starter template</h1>
+            <p class="lead" style="color:black;">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+                	</div>
+
+    	
+    </div>
 
     <main role="main" class="container">
         <section class="slide1" width="device-width">
 
         <div class="starter-template">
-            <h1 style="font-family: 'Great Vibes'; font-size: xx-large;">Bootstrap starter template</h1>
-            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+            
             <br>
             <br>
             
-             <div class="container-fluid bg-color:#A15A4D">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+             <div class="container-fluid bg-color:#A15A4D" style="font-family: 'Nunito Sans', sans-serif;">
+             	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -134,7 +163,7 @@
 
           </p>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid bg-color:#f8f0da">
             <div class="row">
             <div class="col-sm-3 ">
                 
